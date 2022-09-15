@@ -1,6 +1,6 @@
 <!-- Logo -->
 <h1 align="center">
-  <img src="https://github.com/willtheorangeguy/Note-Style-Guide/blob/master/docs/images/logo.png" height="250px" width="300px" alt="Note Style Guide">
+  <img src="https://raw.githubusercontent.com/willtheorangeguy/Note-Style-Guide/main/docs/images/logo.png" height="250px" width="300px" alt="Note Style Guide">
   <br>
   Note Style Guide
 </h1>
@@ -13,7 +13,7 @@
   <!-- Stability -->
   <img alt="Docker State" src="https://github.com/willtheorangeguy/Note-Style-Guide/actions/workflows/docker-publish.yml/badge.svg">
   <!-- Stability -->
-  <img alt="GitHub Pages State" src="https://github.com/willtheorangeguy/Note-Style-Guide/actions/workflows/pages-build-deployment.yml/badge.svg">
+  <img alt="GitHub Pages State" src="https://github.com/willtheorangeguy/Note-Style-Guide/actions/workflows/pages.yml/badge.svg">
   <!-- CodeQL -->
   <img alt="CodeQL State" src="https://github.com/willtheorangeguy/Note-Style-Guide/actions/workflows/codeql-analysis.yml/badge.svg">
   <!-- Version -->
