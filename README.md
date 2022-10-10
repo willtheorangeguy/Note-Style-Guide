@@ -38,14 +38,14 @@
 
 ## Key Features
 
-* Clear style guide.
-* Available for many subject types.
-* Available for many note taking platforms.
-* Consistency across all projects.
-* Easy to implement.
-* Reusable standards.
-* Available in Markdown and on the web.
-* Cross platform, web browser based.
+- Clear style guide.
+- Available for many subject types.
+- Available for many note taking platforms.
+- Consistency across all projects.
+- Easy to implement.
+- Reusable standards.
+- Available in Markdown and on the web.
+- Cross platform, web browser based.
 
 ## How To Use
 
@@ -111,13 +111,13 @@ This software uses the following open source packages, projects, services or web
 
 ## Contributors
 
-* [@willtheorangeguy](https://github.com/willtheorangeguy) - Sponsor on [PayPal](https://paypal.me/wvdg44?country.x=CA&locale.x=en_US)
+- [@willtheorangeguy](https://github.com/willtheorangeguy) - Sponsor on [PayPal](https://paypal.me/wvdg44?country.x=CA&locale.x=en_US)
 
 ## You may also like...
 
-* [Running Calculator](https://github.com/willtheorangeguy/Running-Calculator) - A running speed calculator for any unit of distance.
-* [Python Logo Widgets](https://github.com/willtheorangeguy/Python-Logo-Widgets) - Python Powered Logo widgets that can be added to any GUI project.
-* [willtheorangeguy.github.io](https://github.com/willtheorangeguy/willtheorangeguy.github.io) - My personal Github Pages site.
+- [Running Calculator](https://github.com/willtheorangeguy/Running-Calculator) - A running speed calculator for any unit of distance.
+- [Python Logo Widgets](https://github.com/willtheorangeguy/Python-Logo-Widgets) - Python Powered Logo widgets that can be added to any GUI project.
+- [willtheorangeguy.github.io](https://github.com/willtheorangeguy/willtheorangeguy.github.io) - My personal Github Pages site.
 
 ## License
 
