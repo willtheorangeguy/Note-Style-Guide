@@ -44,7 +44,7 @@ Please contribute using [GitHub Flow](https://guides.github.com/introduction/flo
 ### Do you have questions about the source code?
 
 - Ask any question about how to use the Style Guides on our [Discord](https://discord.gg/AQa2gUyqMG).
-- If it does not get answered, open an [issue](https://github.com/willtheorangeguy/Note-Style-Guide/issues/new/choose).  
+- If it does not get answered, open an [issue](https://github.com/willtheorangeguy/Note-Style-Guide/issues/new/choose).
 
 ## Coding Conventions
 
