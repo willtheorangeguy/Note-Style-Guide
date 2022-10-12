@@ -16,6 +16,8 @@
   <img alt="GitHub Pages State" src="https://github.com/willtheorangeguy/Note-Style-Guide/actions/workflows/pages.yml/badge.svg">
   <!-- CodeQL -->
   <img alt="CodeQL State" src="https://github.com/willtheorangeguy/Note-Style-Guide/actions/workflows/codeql-analysis.yml/badge.svg">
+  <!-- Gitleaks -->
+  <img alt="Gitleaks State" src="https://github.com/willtheorangeguy/Note-Style-Guide/actions/workflows/gitleaks.yml/badge.svg">
   <!-- Version -->
   <img alt="GitHub Version" src="https://img.shields.io/github/v/release/willtheorangeguy/Note-Style-Guide?include_prereleases">
   <!-- Issues -->
