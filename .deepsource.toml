@@ -15,8 +15,5 @@ name = "docker"
 [[analyzers]]
 name = "javascript"
 
-  [analyzers.meta]
-  environment = ["browser"]
-
 [[transformers]]
 name = "prettier"
