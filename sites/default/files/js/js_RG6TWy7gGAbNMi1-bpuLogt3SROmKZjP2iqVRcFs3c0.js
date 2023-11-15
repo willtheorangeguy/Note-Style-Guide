@@ -71,7 +71,7 @@
               interactive: true,
               plugins: [hideOnEsc],
             },
-            Drupal.webform.elementHelpIcon.options
+            Drupal.webform.elementHelpIcon.options,
           );
 
           tippy(this, options);
@@ -93,7 +93,7 @@ var AU = AU || {};
         ? e.classList.remove(n)
         : (e.className = e.className.replace(
             new RegExp("(^|\\b)" + n.split(" ").join("|") + "(\\b|$)", "gi"),
-            " "
+            " ",
           ));
     })(e, a),
       (function (e, n) {
@@ -198,7 +198,7 @@ var AU = AU || {};
                   document.body,
                   w,
                   "au-main-nav__scroll--unlocked",
-                  "au-main-nav__scroll--locked"
+                  "au-main-nav__scroll--locked",
                 ),
                 (p.style.display = ""),
                 (p.style.left = ""),
@@ -285,7 +285,8 @@ var AU = AU || {};
                   o[0].AUinteration >= o[0].AUinterations)
                 )
                   return n.callback();
-              } else (a += r.stepSize), (t.style[n.property] = a + "px"), r.steps--;
+              } else
+                (a += r.stepSize), (t.style[n.property] = a + "px"), r.steps--;
             }, Math.abs(r.intervalTime));
           })(r, l, c, u, p);
       }
@@ -315,7 +316,7 @@ var AU = AU || {};
         else {
           if (f === a && "opening" !== p.AUtoggleState)
             throw new Error(
-              "AU.animate.Toggle cannot determine state of element"
+              "AU.animate.Toggle cannot determine state of element",
             );
           (u = a), (c = "closing"), (s = "closed");
         }
@@ -382,7 +383,7 @@ var AU = AU || {};
                 context,
                 modification.selector,
                 modification.media,
-                modification.args
+                modification.args,
               );
             } else {
               // Limit elements by context.
