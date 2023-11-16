@@ -136,7 +136,9 @@ body {
   -webkit-transition: -webkit-transform 0.25s ease-in;
   transition: -webkit-transform 0.25s ease-in;
   transition: transform 0.25s ease-in;
-  transition: transform 0.25s ease-in, -webkit-transform 0.25s ease-in;
+  transition:
+    transform 0.25s ease-in,
+    -webkit-transform 0.25s ease-in;
 }
 .au-body .au-accordion__title.au-accordion--closed:after,
 .au-accordion__title.au-accordion--closed:after {
@@ -758,8 +760,14 @@ a.au-btn {
   border: 3px solid #007099;
   cursor: pointer;
   vertical-align: middle;
-  -webkit-transition: background 0.1s ease, border 0.1s ease, color 0.1s ease;
-  transition: background 0.1s ease, border 0.1s ease, color 0.1s ease;
+  -webkit-transition:
+    background 0.1s ease,
+    border 0.1s ease,
+    color 0.1s ease;
+  transition:
+    background 0.1s ease,
+    border 0.1s ease,
+    color 0.1s ease;
 }
 .au-body .au-btn,
 .au-body a.au-btn {

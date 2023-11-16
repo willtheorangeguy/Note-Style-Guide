@@ -100,7 +100,7 @@
         return this.pushStack(
           S.map(this, function (e, t) {
             return n.call(e, t, e);
-          })
+          }),
         );
       },
       slice: function () {
@@ -116,14 +116,14 @@
         return this.pushStack(
           S.grep(this, function (e, t) {
             return (t + 1) % 2;
-          })
+          }),
         );
       },
       odd: function () {
         return this.pushStack(
           S.grep(this, function (e, t) {
             return t % 2;
-          })
+          }),
         );
       },
       eq: function (e) {
@@ -248,11 +248,11 @@
     "function" == typeof Symbol && (S.fn[Symbol.iterator] = t[Symbol.iterator]),
     S.each(
       "Boolean Number String Function Array Date RegExp Object Error Symbol".split(
-        " "
+        " ",
       ),
       function (e, t) {
         n["[object " + t + "]"] = t.toLowerCase();
-      }
+      },
     );
   var d = (function (n) {
     var e,
@@ -345,7 +345,7 @@
             "*(\\d+)|))" +
             M +
             "*\\)|)",
-          "i"
+          "i",
         ),
         bool: new RegExp("^(?:" + R + ")$", "i"),
         needsContext: new RegExp(
@@ -356,7 +356,7 @@
             "*((?:-\\d)?\\d*)" +
             M +
             "*\\)|)(?=[^-]|$)",
-          "i"
+          "i",
         ),
       },
       Y = /HTML$/i,
@@ -393,7 +393,7 @@
         function (e) {
           return !0 === e.disabled && "fieldset" === e.nodeName.toLowerCase();
         },
-        { dir: "parentNode", next: "legend" }
+        { dir: "parentNode", next: "legend" },
       );
     try {
       H.apply((t = O.call(p.childNodes)), p.childNodes),
@@ -707,7 +707,7 @@
                 a.webkitMatchesSelector ||
                 a.mozMatchesSelector ||
                 a.oMatchesSelector ||
-                a.msMatchesSelector)
+                a.msMatchesSelector),
             )) &&
               ce(function (e) {
                 (d.disconnectedMatch = c.call(e, "*")),
@@ -947,7 +947,7 @@
                     ("string" == typeof e.className && e.className) ||
                       ("undefined" != typeof e.getAttribute &&
                         e.getAttribute("class")) ||
-                      ""
+                      "",
                   );
                 }))
             );
@@ -1298,7 +1298,9 @@
                   -1 < (i = y ? P(e, a) : s[o]) &&
                   (e[i] = !(t[i] = a));
             }
-          } else (p = Te(p === t ? p.splice(l, p.length) : p)), y ? y(null, t, p, r) : H.apply(t, p);
+          } else
+            (p = Te(p === t ? p.splice(l, p.length) : p)),
+              y ? y(null, t, p, r) : H.apply(t, p);
         })
       );
     }
@@ -1316,14 +1318,14 @@
               return e === i;
             },
             a,
-            !0
+            !0,
           ),
           l = be(
             function (e) {
               return -1 < P(i, e);
             },
             a,
-            !0
+            !0,
           ),
           c = [
             function (e, t, n) {
@@ -1346,12 +1348,12 @@
                 xe(
                   e
                     .slice(0, s - 1)
-                    .concat({ value: " " === e[s - 2].type ? "*" : "" })
+                    .concat({ value: " " === e[s - 2].type ? "*" : "" }),
                 ).replace($, "$1"),
               t,
               s < n && Ee(e.slice(s, n)),
               n < r && Ee((e = e.slice(n))),
-              n < r && xe(e)
+              n < r && xe(e),
             );
           }
           c.push(t);
@@ -1454,7 +1456,7 @@
                 }
                 return i && ((k = h), (w = p)), c;
               }),
-              m ? le(r) : r)
+              m ? le(r) : r),
             )).selector = e;
           }
           return a;
@@ -1487,7 +1489,7 @@
                 (u = b.find[s]) &&
                 (r = u(
                   a.matches[0].replace(te, ne),
-                  (ee.test(o[0].type) && ye(t.parentNode)) || t
+                  (ee.test(o[0].type) && ye(t.parentNode)) || t,
                 ))
               ) {
                 if ((o.splice(i, 1), !(e = r.length && xe(o))))
@@ -1502,7 +1504,7 @@
               t,
               !E,
               n,
-              !t || (ee.test(e) && ye(t.parentNode)) || t
+              !t || (ee.test(e) && ye(t.parentNode)) || t,
             ),
             n
           );
@@ -1603,7 +1605,7 @@
             e,
             S.grep(t, function (e) {
               return 1 === e.nodeType;
-            })
+            }),
           )
     );
   }),
@@ -1617,7 +1619,7 @@
           return this.pushStack(
             S(e).filter(function () {
               for (t = 0; t < r; t++) if (S.contains(i[t], this)) return !0;
-            })
+            }),
           );
         for (n = this.pushStack([]), t = 0; t < r; t++) S.find(e, i[t], n);
         return 1 < r ? S.uniqueSort(n) : n;
@@ -1652,7 +1654,7 @@
           ((t = t instanceof S ? t[0] : t),
           S.merge(
             this,
-            S.parseHTML(r[1], t && t.nodeType ? t.ownerDocument || t : E, !0)
+            S.parseHTML(r[1], t && t.nodeType ? t.ownerDocument || t : E, !0),
           ),
           N.test(r[1]) && S.isPlainObject(t))
         )
@@ -1776,7 +1778,7 @@
             this.pushStack(n)
           );
         };
-      }
+      },
     );
   var P = /[^\x20\t\r\n\f]+/g;
   function R(e) {
@@ -1967,7 +1969,7 @@
                                   e,
                                   l(u, o, R, s),
                                   l(u, o, M, s),
-                                  l(u, o, R, o.notifyWith)
+                                  l(u, o, R, o.notifyWith),
                                 ))
                             : (a !== R && ((n = void 0), (r = [e])),
                               (s || o.resolveWith)(n, r));
@@ -2017,7 +2019,7 @@
                   o[3 - e][2].disable,
                   o[3 - e][3].disable,
                   o[0][2].lock,
-                  o[0][3].lock
+                  o[0][3].lock,
                 ),
               n.add(t[3].fire),
               (s[t[0]] = function () {
@@ -2275,7 +2277,7 @@
               e,
               1 < arguments.length,
               null,
-              !0
+              !0,
             );
       },
       removeData: function (e) {
@@ -2313,7 +2315,7 @@
               function () {
                 S.dequeue(e, t);
               },
-              o
+              o,
             )),
           !r && o && o.empty.fire();
       },
@@ -2622,7 +2624,7 @@
                   value: S.event.trigger(
                     S.extend(r[0], S.Event.prototype),
                     r.slice(1),
-                    this
+                    this,
                   ),
                 }),
                 e.stopImmediatePropagation());
@@ -2676,7 +2678,7 @@
                   needsContext: i && S.expr.match.needsContext.test(i),
                   namespace: h.join("."),
                 },
-                o
+                o,
               )),
               (p = u[d]) ||
                 (((p = u[d] = []).delegateCount = 0),
@@ -2933,7 +2935,7 @@
         touches: !0,
         which: !0,
       },
-      S.event.addProp
+      S.event.addProp,
     ),
     S.each({ focus: "focusin", blur: "focusout" }, function (e, t) {
       S.event.special[e] = {
@@ -2973,7 +2975,7 @@
             );
           },
         };
-      }
+      },
     ),
     S.fn.extend({
       on: function (e, t, n, r) {
@@ -2990,7 +2992,7 @@
             S(e.delegateTarget).off(
               r.namespace ? r.origType + "." + r.namespace : r.origType,
               r.selector,
-              r.handler
+              r.handler,
             ),
             this
           );
@@ -3079,7 +3081,7 @@
                   S._evalUrl(
                     u.src,
                     { nonce: u.nonce || u.getAttribute("nonce") },
-                    l
+                    l,
                   )
                 : b(u.textContent.replace(Ne, ""), u, l));
     }
@@ -3165,7 +3167,7 @@
           },
           null,
           e,
-          arguments.length
+          arguments.length,
         );
       },
       append: function () {
@@ -3237,7 +3239,7 @@
           },
           null,
           e,
-          arguments.length
+          arguments.length,
         );
       },
       replaceWith: function () {
@@ -3250,7 +3252,7 @@
             S.inArray(this, n) < 0 &&
               (S.cleanData(ve(this)), t && t.replaceChild(e, this));
           },
-          n
+          n,
         );
       },
     }),
@@ -3270,7 +3272,7 @@
               u.apply(n, t.get());
           return this.pushStack(n);
         };
-      }
+      },
     );
   var Pe = new RegExp("^(" + ee + ")(?!px)[a-z%]+$", "i"),
     Re = function (e) {
@@ -3443,8 +3445,8 @@
           Math.max(
             0,
             Math.ceil(
-              e["offset" + t[0].toUpperCase() + t.slice(1)] - o - u - s - 0.5
-            )
+              e["offset" + t[0].toUpperCase() + t.slice(1)] - o - u - s - 0.5,
+            ),
           ) || 0),
       u
     );
@@ -3582,7 +3584,7 @@
                 e["offset" + u[0].toUpperCase() + u.slice(1)] -
                   parseFloat(i[u]) -
                   Qe(e, u, "border", !1, i) -
-                  0.5
+                  0.5,
               )),
             s &&
               (r = te.exec(t)) &&
@@ -3635,7 +3637,7 @@
           },
           e,
           t,
-          1 < arguments.length
+          1 < arguments.length,
         );
       },
     }),
@@ -3665,7 +3667,7 @@
                   this.options.duration * e,
                   0,
                   1,
-                  this.options.duration
+                  this.options.duration,
                 ))
             : (this.pos = t = e),
           (this.now = (this.end - this.start) * t + this.start),
@@ -3795,7 +3797,7 @@
             l.opts,
             e,
             t,
-            l.opts.specialEasing[e] || l.opts.easing
+            l.opts.specialEasing[e] || l.opts.easing,
           );
           return l.tweens.push(n), n;
         },
@@ -4070,7 +4072,7 @@
         S.fn[e] = function (e, t, n) {
           return this.animate(r, e, t, n);
         };
-      }
+      },
     ),
     (S.timers = []),
     (S.fx.tick = function () {
@@ -4265,7 +4267,7 @@
       ],
       function () {
         S.propFix[this.toLowerCase()] = this;
-      }
+      },
     ),
     S.fn.extend({
       addClass: function (t) {
@@ -4333,7 +4335,14 @@
                 (t = 0), (n = S(this)), (r = vt(i));
                 while ((e = r[t++]))
                   n.hasClass(e) ? n.removeClass(e) : n.addClass(e);
-              } else (void 0 !== i && "boolean" !== o) || ((e = gt(this)) && Y.set(this, "__className__", e), this.setAttribute && this.setAttribute("class", e || !1 === i ? "" : Y.get(this, "__className__") || ""));
+              } else
+                (void 0 !== i && "boolean" !== o) ||
+                  ((e = gt(this)) && Y.set(this, "__className__", e),
+                  this.setAttribute &&
+                    this.setAttribute(
+                      "class",
+                      e || !1 === i ? "" : Y.get(this, "__className__") || "",
+                    ));
             });
       },
       hasClass: function (e) {
@@ -4576,7 +4585,7 @@
               ? S.map(n.childNodes, function (e) {
                   return e.textContent;
                 }).join("\n")
-              : e)
+              : e),
         ),
       t
     );
@@ -4595,7 +4604,7 @@
               n + "[" + ("object" == typeof t && null != t ? e : "") + "]",
               t,
               r,
-              i
+              i,
             );
       });
     else if (r || "object" !== w(e)) i(n, e);
@@ -4709,7 +4718,7 @@
         type: "GET",
         isLocal:
           /^(?:about|app|app-storage|.+-extension|file|res|widget):$/.test(
-            bt.protocol
+            bt.protocol,
           ),
         global: !0,
         processData: !0,
@@ -4808,7 +4817,7 @@
           (x.promise(T),
           (v.url = ((e || v.url || bt.href) + "").replace(
             Ht,
-            bt.protocol + "//"
+            bt.protocol + "//",
           )),
           (v.type = t.method || t.type || v.method || v.type),
           (v.dataTypes = (v.dataType || "*").toLowerCase().match(P) || [""]),
@@ -4844,7 +4853,7 @@
             v.processData &&
             0 ===
               (v.contentType || "").indexOf(
-                "application/x-www-form-urlencoded"
+                "application/x-www-form-urlencoded",
               ) &&
             (v.data = v.data.replace(Nt, "+"))
           : ((o = v.url.slice(f.length)),
@@ -4866,7 +4875,7 @@
           v.dataTypes[0] && v.accepts[v.dataTypes[0]]
             ? v.accepts[v.dataTypes[0]] +
                 ("*" !== v.dataTypes[0] ? ", " + Rt + "; q=0.01" : "")
-            : v.accepts["*"]
+            : v.accepts["*"],
         ),
         v.headers))
           T.setRequestHeader(i, v.headers[i]);
@@ -5027,8 +5036,8 @@
           S.ajax(
             S.extend(
               { url: e, type: i, dataType: r, data: t, success: n },
-              S.isPlainObject(e) && e
-            )
+              S.isPlainObject(e) && e,
+            ),
           )
         );
       };
@@ -5158,7 +5167,7 @@
                           "string" != typeof r.responseText
                           ? { binary: r.response }
                           : { text: r.responseText },
-                        r.getAllResponseHeaders()
+                        r.getAllResponseHeaders(),
                       ));
               };
             }),
@@ -5216,7 +5225,7 @@
                   r.remove(),
                     (i = null),
                     e && t("error" === e.type ? 404 : 200, e.type);
-                })
+                }),
               )),
               E.head.appendChild(r[0]);
           },
@@ -5246,7 +5255,7 @@
             : "string" == typeof e.data &&
               0 ===
                 (e.contentType || "").indexOf(
-                  "application/x-www-form-urlencoded"
+                  "application/x-www-form-urlencoded",
                 ) &&
               Ut.test(e.data) &&
               "data");
@@ -5287,7 +5296,7 @@
             (y.createHTMLDocument
               ? (((r = (t =
                   E.implementation.createHTMLDocument("")).createElement(
-                  "base"
+                  "base",
                 )).href = E.location.href),
                 t.head.appendChild(r))
               : (t = E)),
@@ -5322,7 +5331,7 @@
                   a.each(function () {
                     n.apply(this, o || [e.responseText, t, e]);
                   });
-                }
+                },
             ),
         this
       );
@@ -5433,10 +5442,10 @@
             },
             t,
             e,
-            arguments.length
+            arguments.length,
           );
         };
-      }
+      },
     ),
     S.each(["top", "left"], function (e, n) {
       S.cssHooks[n] = Fe(y.pixelPosition, function (e, t) {
@@ -5466,7 +5475,7 @@
                       r["scroll" + a],
                       e.body["offset" + a],
                       r["offset" + a],
-                      r["client" + a]
+                      r["client" + a],
                     ))
                   : void 0 === n
                   ? S.css(e, t, i)
@@ -5474,10 +5483,10 @@
               },
               s,
               n ? e : void 0,
-              n
+              n,
             );
           };
-        }
+        },
       );
     }),
     S.each(
@@ -5493,7 +5502,7 @@
         S.fn[t] = function (e) {
           return this.on(t, e);
         };
-      }
+      },
     ),
     S.fn.extend({
       bind: function (e, t, n) {
@@ -5516,7 +5525,7 @@
     }),
     S.each(
       "blur focus focusin focusout resize scroll click dblclick mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave change select submit keydown keypress keyup contextmenu".split(
-        " "
+        " ",
       ),
       function (e, n) {
         S.fn[n] = function (e, t) {
@@ -5524,7 +5533,7 @@
             ? this.on(n, null, e, t)
             : this.trigger(n);
         };
-      }
+      },
     );
   var Xt = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
   (S.proxy = function (e, t) {
@@ -5873,7 +5882,7 @@ if (!Array.prototype.find) {
   }
   function d() {
     return new TypeError(
-      "A promises callback cannot return that same promise."
+      "A promises callback cannot return that same promise.",
     );
   }
   function _(t, e, n, r) {
@@ -5895,7 +5904,7 @@ if (!Array.prototype.find) {
           function (e) {
             r || ((r = !0), S(t, e));
           },
-          "Settle: " + (t._label || " unknown promise")
+          "Settle: " + (t._label || " unknown promise"),
         );
       !r && o && ((r = !0), S(t, o));
     }, t);
@@ -5913,7 +5922,7 @@ if (!Array.prototype.find) {
           },
           function (e) {
             return S(t, e);
-          }
+          },
         );
   }
   function b(t, n, r) {
@@ -5999,7 +6008,7 @@ if (!Array.prototype.find) {
         },
         function (e) {
           S(t, e);
-        }
+        },
       );
     } catch (n) {
       S(t, n);
@@ -6030,7 +6039,7 @@ if (!Array.prototype.find) {
           }
         : function (t, e) {
             return e(new TypeError("You must pass an array to race."));
-          }
+          },
     );
   }
   function F(t) {
@@ -6040,12 +6049,12 @@ if (!Array.prototype.find) {
   }
   function Y() {
     throw new TypeError(
-      "You must pass a resolver function as the first argument to the promise constructor"
+      "You must pass a resolver function as the first argument to the promise constructor",
     );
   }
   function q() {
     throw new TypeError(
-      "Failed to construct 'Promise': Please use the 'new' operator, this object constructor cannot be called as a function."
+      "Failed to construct 'Promise': Please use the 'new' operator, this object constructor cannot be called as a function.",
     );
   }
   function D() {
@@ -6057,7 +6066,7 @@ if (!Array.prototype.find) {
         t = Function("return this")();
       } catch (e) {
         throw new Error(
-          "polyfill failed because global object is unavailable in this environment"
+          "polyfill failed because global object is unavailable in this environment",
         );
       }
     var n = t.Promise;
@@ -6155,7 +6164,7 @@ if (!Array.prototype.find) {
                 new n(function (e) {
                   return e(t);
                 }),
-                e
+                e,
               );
           } else this._willSettleAt(r(t), e);
         }),
@@ -6175,7 +6184,7 @@ if (!Array.prototype.find) {
             },
             function (t) {
               return n._settledAt($, e, t);
-            }
+            },
           );
         }),
         t
@@ -6208,7 +6217,7 @@ if (!Array.prototype.find) {
                   return r.resolve(t()).then(function () {
                     throw e;
                   });
-                }
+                },
               )
             : n.then(t, t);
         }),
@@ -6354,7 +6363,7 @@ var once = (function () {
 
 (function () {
   var settingsElement = document.querySelector(
-    'head > script[type="application/json"][data-drupal-selector="drupal-settings-json"], body > script[type="application/json"][data-drupal-selector="drupal-settings-json"]'
+    'head > script[type="application/json"][data-drupal-selector="drupal-settings-json"], body > script[type="application/json"][data-drupal-selector="drupal-settings-json"]',
   );
   window.drupalSettings = {};
 
@@ -6380,7 +6389,7 @@ window.Drupal = {
   drupalTranslations,
   console,
   Proxy,
-  Reflect
+  Reflect,
 ) {
   Drupal.throwError = function (error) {
     setTimeout(function () {
@@ -6547,7 +6556,7 @@ window.Drupal = {
     var translations = Drupal.t(
       singular + pluralDelimiter + plural,
       args,
-      options
+      options,
     ).split(pluralDelimiter);
     var index = 0;
 
@@ -6641,7 +6650,7 @@ window.Drupal = {
   window.drupalTranslations,
   window.console,
   window.Proxy,
-  window.Reflect
+  window.Reflect,
 );
 /**
  * DO NOT EDIT THIS FILE.
@@ -6776,7 +6785,7 @@ document.documentElement.className += " js";
             n = e.form || i(e),
             o = function (e) {
               return n.querySelectorAll(
-                'input[type="radio"][name="' + e + '"]'
+                'input[type="radio"][name="' + e + '"]',
               );
             };
           if (
@@ -6792,7 +6801,7 @@ document.documentElement.className += " js";
               return (
                 console.error(
                   "Looks like you have a radio button with a name attribute containing invalid CSS selector characters and need the CSS.escape polyfill: %s",
-                  e.message
+                  e.message,
                 ),
                 !1
               );
@@ -6935,7 +6944,7 @@ document.documentElement.className += " js";
               flatten: !1,
               getShadowRoot: t.getShadowRoot,
             })
-          : a(e, t.includeContainer, h.bind(null, t))
+          : a(e, t.includeContainer, h.bind(null, t)),
       );
     }),
     Object.defineProperty(e, "__esModule", { value: !0 });
@@ -7001,7 +7010,7 @@ document.documentElement.className += " js";
               function () {
                 t.go();
               },
-              !1
+              !1,
             )
           : window.attachEvent &&
             window.attachEvent("onload", function () {
@@ -7015,7 +7024,7 @@ document.documentElement.className += " js";
       100,
       "r",
       "QSI_S_ZN_0Jl5zHBrm9N4oZM",
-      "https://zn0jl5zhbrm9n4ozm-apscommission.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_0Jl5zHBrm9N4oZM"
+      "https://zn0jl5zhbrm9n4ozm-apscommission.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_0Jl5zHBrm9N4oZM",
     ).start();
   } catch (i) {}
 })();
@@ -7067,7 +7076,7 @@ document.documentElement.className += " js";
                   event_category: "Downloads",
                   event_label: Drupal.google_analytics.getPageUrl(this.href),
                   transport_type: "beacon",
-                }
+                },
               );
             } else if (Drupal.google_analytics.isInternalSpecial(this.href)) {
               // Keep the internal URL for Google Analytics website overlay intact.
@@ -7107,7 +7116,7 @@ document.documentElement.className += " js";
                 (drupalSettings.google_analytics.trackDomainMode === 2 &&
                   !Drupal.google_analytics.isCrossDomain(
                     this.hostname,
-                    drupalSettings.google_analytics.trackCrossDomains
+                    drupalSettings.google_analytics.trackCrossDomains,
                   ))
               ) {
                 // External link clicked / No top-level cross domain clicked.
@@ -7172,7 +7181,7 @@ document.documentElement.className += " js";
       "\\.(" +
         drupalSettings.google_analytics.trackDownloadExtensions +
         ")([?#].*)?$",
-      "i"
+      "i",
     );
     return isDownload.test(url);
   };
@@ -7222,7 +7231,7 @@ document.documentElement.className += " js";
   Drupal.google_analytics.getPageUrl = function (url) {
     var extractInternalUrl = new RegExp(
       "^(https?)://" + window.location.host,
-      "i"
+      "i",
     );
     return url.replace(extractInternalUrl, "");
   };
@@ -7241,7 +7250,7 @@ document.documentElement.className += " js";
       "\\.(" +
         drupalSettings.google_analytics.trackDownloadExtensions +
         ")([?#].*)?$",
-      "i"
+      "i",
     );
     var extension = extractDownloadextension.exec(url);
     return extension === null ? "" : extension[1];
@@ -7311,7 +7320,7 @@ jQuery(document).ready(function ($) {
       (disclaimerCheckbox = $("#disclaimer-checkbox")),
       (disclaimerSubmit = $("#disclaimer-agree")).attr(
         "disabled",
-        !disclaimerCheckbox.prop("checked")
+        !disclaimerCheckbox.prop("checked"),
       ),
       disclaimerCheckbox.change(function () {
         this.checked
@@ -7345,7 +7354,7 @@ jQuery(document).ready(function ($) {
             anchor +
             '">' +
             heading +
-            "</span>"
+            "</span>",
         ),
         (list_class =
           "about this page" == heading.toLowerCase() ? "toc-separator" : ""),
@@ -7361,7 +7370,7 @@ jQuery(document).ready(function ($) {
       $(".main-content p.abstract").after(
         '<nav class="au-inpage-nav-links hidden-print" aria-label="in page navigation"><h2 class="au-inpage-nav-links__heading">Guidance</h2><ul class="au-link-list">' +
           toc +
-          "</ul></nav>"
+          "</ul></nav>",
       ),
       location.hash &&
         location.hash.length &&
@@ -7369,7 +7378,7 @@ jQuery(document).ready(function ($) {
         setTimeout(function () {
           $("body,html").animate(
             { scrollTop: $("h2 span#" + hash + ":first").offset().top },
-            800
+            800,
           );
         }, 800));
   }
@@ -7377,7 +7386,7 @@ jQuery(document).ready(function ($) {
     ($(document).on("click", 'a[href^="#"]', function (event) {
       $("html, body").animate(
         { scrollTop: $($.attr(this, "href")).offset().top },
-        500
+        500,
       );
     }),
     0 < $('[id*="webform-submission-feedback-form-"]').length)
@@ -7396,13 +7405,13 @@ jQuery(document).ready(function ($) {
           document.getElementById(id).setAttribute("aria-describedby", id);
     }
     var alertOverlay = document.getElementById(
-        "edit-do-you-find-this-page-useful-no"
+        "edit-do-you-find-this-page-useful-no",
       ),
       radioYes = document.getElementById(
-        "edit-do-you-find-this-page-useful-yes"
+        "edit-do-you-find-this-page-useful-yes",
       ),
       radioPartial = document.getElementById(
-        "edit-do-you-find-this-page-useful-partially"
+        "edit-do-you-find-this-page-useful-partially",
       );
     jQuery(alertOverlay).addClass("empty-required"),
       jQuery(radioYes).addClass("empty-required"),
@@ -7418,19 +7427,19 @@ jQuery(document).ready(function ($) {
   $(".form-email.error").attr("aria-describedby", "edit-email").focus(),
     $("form.webform-submission-form div.form-actions").attr(
       "id",
-      "feedback_form_edit_actions"
+      "feedback_form_edit_actions",
     ),
     0 <= navigator.userAgent.search("Safari") &&
       navigator.userAgent.search("Chrome") < 0 &&
       0 <= navigator.userAgent.search("iPhone") &&
       ($("button.au-main-nav__toggle--open").click(function () {
         $(
-          "#top, h2.visually-hidden, .layout-sidebar, button.au-main-nav__toggle--open, main.container, footer, #sm-header div header, #back-to-top"
+          "#top, h2.visually-hidden, .layout-sidebar, button.au-main-nav__toggle--open, main.container, footer, #sm-header div header, #back-to-top",
         ).attr("aria-hidden", "true");
       }),
       $("button.au-main-nav__toggle--close").click(function () {
         $(
-          "#top, h2.visually-hidden, .layout-sidebar, button.au-main-nav__toggle--open, main.container, footer, #sm-header div header, #back-to-top"
+          "#top, h2.visually-hidden, .layout-sidebar, button.au-main-nav__toggle--open, main.container, footer, #sm-header div header, #back-to-top",
         ).removeAttr("aria-hidden");
       }),
       (down = {}),
@@ -7611,7 +7620,7 @@ Drupal.debounce = function (func, wait, immediate) {
       $(once("form-single-submit", "body")).on(
         "submit.singleSubmit",
         'form:not([method~="GET"])',
-        onFormSubmit
+        onFormSubmit,
       );
     },
   };
@@ -7631,7 +7640,7 @@ Drupal.debounce = function (func, wait, immediate) {
       var $context = $(context);
       var contextIsForm = $context.is("form");
       var $forms = $(
-        once("form-updated", contextIsForm ? $context : $context.find("form"))
+        once("form-updated", contextIsForm ? $context : $context.find("form")),
       );
       var formFields;
 
@@ -7664,7 +7673,7 @@ Drupal.debounce = function (func, wait, immediate) {
         once
           .remove(
             "form-updated",
-            contextIsForm ? $context : $context.find("form")
+            contextIsForm ? $context : $context.find("form"),
           )
           .forEach(function (form) {
             form.removeAttribute("data-drupal-form-fields");
@@ -7677,14 +7686,14 @@ Drupal.debounce = function (func, wait, immediate) {
     attach: function attach(context, settings) {
       var userInfo = ["name", "mail", "homepage"];
       var $forms = $(
-        once("user-info-from-browser", "[data-user-info-from-browser]")
+        once("user-info-from-browser", "[data-user-info-from-browser]"),
       );
 
       if ($forms.length) {
         userInfo.forEach(function (info) {
           var $element = $forms.find("[name=".concat(info, "]"));
           var browserData = localStorage.getItem(
-            "Drupal.visitor.".concat(info)
+            "Drupal.visitor.".concat(info),
           );
 
           if (!$element.length) {
@@ -7710,7 +7719,7 @@ Drupal.debounce = function (func, wait, immediate) {
           if ($element.length) {
             localStorage.setItem(
               "Drupal.visitor.".concat(info),
-              $element[0].value
+              $element[0].value,
             );
           }
         });
@@ -7744,16 +7753,16 @@ Drupal.debounce = function (func, wait, immediate) {
   var debouncedHandleFragmentLinkClickOrHashChange = debounce(
     handleFragmentLinkClickOrHashChange,
     300,
-    true
+    true,
   );
   $(window).on(
     "hashchange.form-fragment",
-    debouncedHandleFragmentLinkClickOrHashChange
+    debouncedHandleFragmentLinkClickOrHashChange,
   );
   $(document).on(
     "click.form-fragment",
     'a[href*="#"]',
-    debouncedHandleFragmentLinkClickOrHashChange
+    debouncedHandleFragmentLinkClickOrHashChange,
   );
 })(jQuery, Drupal, Drupal.debounce);
 /**
@@ -7869,7 +7878,7 @@ Drupal.debounce = function (func, wait, immediate) {
         values: {},
         oldValue: null,
       },
-      args
+      args,
     );
     this.dependees = this.getDependees();
     Object.keys(this.dependees || {}).forEach(function (selector) {
@@ -7912,7 +7921,7 @@ Drupal.debounce = function (func, wait, immediate) {
           },
           function (e) {
             _this2.update(e.data.selector, e.data.state, e.value);
-          }
+          },
         );
         new states.Trigger({
           selector: selector,
@@ -7926,7 +7935,7 @@ Drupal.debounce = function (func, wait, immediate) {
       if (reference.constructor.name in states.Dependent.comparisons) {
         return states.Dependent.comparisons[reference.constructor.name](
           reference,
-          value
+          value,
         );
       }
 
@@ -7974,7 +7983,7 @@ Drupal.debounce = function (func, wait, immediate) {
           if (constraints.hasOwnProperty(n)) {
             result = ternary(
               result,
-              this.checkConstraints(constraints[n], selector, n)
+              this.checkConstraints(constraints[n], selector, n),
             );
 
             if (result === false) {
@@ -8058,7 +8067,7 @@ Drupal.debounce = function (func, wait, immediate) {
             });
             oldValue = value;
           }
-        }, this)
+        }, this),
       );
       states.postponed.push(
         $.proxy(function () {
@@ -8067,7 +8076,7 @@ Drupal.debounce = function (func, wait, immediate) {
             value: oldValue,
             oldValue: null,
           });
-        }, this)
+        }, this),
       );
     },
   };
@@ -8174,7 +8183,7 @@ Drupal.debounce = function (func, wait, immediate) {
     if (e.trigger) {
       if (e.value) {
         var label = "label".concat(
-          e.target.id ? "[for=".concat(e.target.id, "]") : ""
+          e.target.id ? "[for=".concat(e.target.id, "]") : "",
         );
         var $label = $(e.target)
           .attr({
@@ -8256,7 +8265,7 @@ Drupal.debounce = function (func, wait, immediate) {
    */
   $.fn.isWebform = function () {
     return $(this).closest(
-      'form.webform-submission-form, form[id^="webform"], form[data-is-webform]'
+      'form.webform-submission-form, form[id^="webform"], form[data-is-webform]',
     ).length
       ? true
       : false;
@@ -8303,7 +8312,7 @@ Drupal.debounce = function (func, wait, immediate) {
   Drupal.states.Dependent.prototype.compare = function compare(
     reference,
     selector,
-    state
+    state,
   ) {
     var value = this.values[selector][state.name];
 
@@ -8320,7 +8329,7 @@ Drupal.debounce = function (func, wait, immediate) {
     if (reference.constructor.name in states.Dependent.comparisons) {
       return states.Dependent.comparisons[reference.constructor.name](
         reference,
-        value
+        value,
       );
     }
 
@@ -8396,7 +8405,7 @@ Drupal.debounce = function (func, wait, immediate) {
       // @see Issue #2856795: If radio buttons are required but not filled form is nevertheless submitted.
       if (
         $target.is(
-          ".js-form-type-radios, .js-form-type-webform-radios-other, .js-webform-type-radios, .js-webform-type-webform-radios-other, .js-webform-type-webform-entity-radios, .webform-likert-table"
+          ".js-form-type-radios, .js-form-type-webform-radios-other, .js-webform-type-radios, .js-webform-type-webform-radios-other, .js-webform-type-webform-entity-radios, .webform-likert-table",
         )
       ) {
         $target.toggleClass("required", e.value);
@@ -8408,7 +8417,7 @@ Drupal.debounce = function (func, wait, immediate) {
       // @see checkboxRequiredhandler
       if (
         $target.is(
-          ".js-form-type-checkboxes, .js-form-type-webform-checkboxes-other, .js-webform-type-checkboxes, .js-webform-type-webform-checkboxes-other"
+          ".js-form-type-checkboxes, .js-form-type-webform-checkboxes-other, .js-webform-type-checkboxes, .js-webform-type-webform-checkboxes-other",
         )
       ) {
         $target.toggleClass("required", e.value);
@@ -8439,13 +8448,13 @@ Drupal.debounce = function (func, wait, immediate) {
           if (e.value) {
             $checkboxes.on(
               "click change",
-              statesCheckboxesRequiredEventHandler
+              statesCheckboxesRequiredEventHandler,
             );
             checkboxesRequired($tbody);
           } else {
             $checkboxes.off(
               "click change ",
-              statesCheckboxesRequiredEventHandler
+              statesCheckboxesRequiredEventHandler,
             );
             toggleRequired($tbody, false);
           }
@@ -8461,7 +8470,7 @@ Drupal.debounce = function (func, wait, immediate) {
       // @see Issue #3145300: Conditional Visible Select Other not working.
       if (
         $target.is(
-          ".js-form-type-webform-select-other, .js-webform-type-webform-select-other"
+          ".js-form-type-webform-select-other, .js-webform-type-webform-select-other",
         )
       ) {
         var $select = $target.find("select");
@@ -8482,7 +8491,7 @@ Drupal.debounce = function (func, wait, immediate) {
       // @see Issue #2977569: Hidden fieldsets that become visible with conditional logic cannot be made required.
       if (
         $target.is(
-          ".js-webform-type-radios, .js-webform-type-checkboxes, fieldset"
+          ".js-webform-type-radios, .js-webform-type-checkboxes, fieldset",
         )
       ) {
         $target
@@ -8567,7 +8576,7 @@ Drupal.debounce = function (func, wait, immediate) {
       // Never disable hidden file[fids] because the existing values will
       // be completely lost when the webform is submitted.
       var fileElements = $(e.target).find(
-        ':input[type="hidden"][name$="[fids]"]'
+        ':input[type="hidden"][name$="[fids]"]',
       );
       if (fileElements.length) {
         // Remove 'disabled' attribute from fieldset which will block
@@ -8601,7 +8610,7 @@ Drupal.debounce = function (func, wait, immediate) {
     attach: function (context) {
       $(
         ".js-form-type-checkboxes.required, .js-form-type-webform-checkboxes-other.required, .js-webform-type-checkboxes.required, .js-webform-type-webform-checkboxes-other.required, .js-webform-type-webform-radios-other.checkboxes",
-        context
+        context,
       )
         .once("webform-checkboxes-required")
         .each(function () {
@@ -8627,7 +8636,7 @@ Drupal.debounce = function (func, wait, immediate) {
     attach: function (context) {
       $(
         ".js-form-type-radios, .js-form-type-webform-radios-other, .js-webform-type-radios, .js-webform-type-webform-radios-other, .js-webform-type-webform-entity-radios, .js-webform-type-webform-scale",
-        context
+        context,
       )
         .once("webform-radios-required")
         .each(function () {
@@ -8714,7 +8723,7 @@ Drupal.debounce = function (func, wait, immediate) {
    */
   function statesCheckboxesRequiredEventHandler() {
     var $element = $(this).closest(
-      ".js-webform-type-checkboxes, .js-webform-type-webform-checkboxes-other"
+      ".js-webform-type-checkboxes, .js-webform-type-webform-checkboxes-other",
     );
     checkboxesRequired($element);
   }
@@ -8959,7 +8968,7 @@ Drupal.debounce = function (func, wait, immediate) {
         .on(
           "submit.singleSubmit",
           "form.webform-remove-single-submit",
-          onFormSubmit
+          onFormSubmit,
         );
     },
   };
@@ -9006,7 +9015,7 @@ Drupal.debounce = function (func, wait, immediate) {
     attach: function (context) {
       $(context)
         .find(
-          ":input[data-webform-required-error], :input[data-webform-pattern-error]"
+          ":input[data-webform-required-error], :input[data-webform-pattern-error]",
         )
         .once("webform-required-error")
         .on("invalid", function () {
@@ -9275,7 +9284,7 @@ Drupal.debounce = function (func, wait, immediate) {
               button:
                 '<button type="button" class="webform-details-toggle-state"></button>',
             },
-            Drupal.webform.detailsToggle.options
+            Drupal.webform.detailsToggle.options,
           );
 
           // Create toggle buttons.
@@ -9439,7 +9448,7 @@ Drupal.debounce = function (func, wait, immediate) {
             pb.setProgress(
               progress.percentage,
               progress.message,
-              progress.label
+              progress.label,
             );
             pb.timer = setTimeout(function () {
               pb.sendPing();
@@ -9454,7 +9463,7 @@ Drupal.debounce = function (func, wait, immediate) {
     },
     displayError: function displayError(string) {
       var error = $('<div class="messages messages--error"></div>').html(
-        string
+        string,
       );
       $(this.element).before(error).hide();
 
@@ -9498,7 +9507,7 @@ function _toConsumableArray(arr) {
 
 function _nonIterableSpread() {
   throw new TypeError(
-    "Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."
+    "Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.",
   );
 }
 
@@ -9588,11 +9597,11 @@ function _arrayLikeToArray(arr, len) {
         .concat(
           Drupal.t("HTTP Result Code: !status", {
             "!status": xmlhttp.status,
-          })
+          }),
         );
     } else {
       statusCode = "\n".concat(
-        Drupal.t("An AJAX HTTP request terminated abnormally.")
+        Drupal.t("An AJAX HTTP request terminated abnormally."),
       );
     }
 
@@ -9600,7 +9609,7 @@ function _arrayLikeToArray(arr, len) {
     var pathText = "\n".concat(
       Drupal.t("Path: !uri", {
         "!uri": uri,
-      })
+      }),
     );
     statusText = "";
 
@@ -9608,7 +9617,7 @@ function _arrayLikeToArray(arr, len) {
       statusText = "\n".concat(
         Drupal.t("StatusText: !statusText", {
           "!statusText": xmlhttp.statusText.trim(),
-        })
+        }),
       );
     } catch (e) {}
 
@@ -9618,7 +9627,7 @@ function _arrayLikeToArray(arr, len) {
       responseText = "\n".concat(
         Drupal.t("ResponseText: !responseText", {
           "!responseText": xmlhttp.responseText.trim(),
-        })
+        }),
       );
     } catch (e) {}
 
@@ -9629,14 +9638,14 @@ function _arrayLikeToArray(arr, len) {
         ? "\n".concat(
             Drupal.t("ReadyState: !readyState", {
               "!readyState": xmlhttp.readyState,
-            })
+            }),
           )
         : "";
     customMessage = customMessage
       ? "\n".concat(
           Drupal.t("CustomMessage: !customMessage", {
             "!customMessage": customMessage,
-          })
+          }),
         )
       : "";
     this.message =
@@ -9655,7 +9664,7 @@ function _arrayLikeToArray(arr, len) {
   Drupal.ajax = function (settings) {
     if (arguments.length !== 1) {
       throw new Error(
-        "Drupal.ajax() function must be called with one configuration object only"
+        "Drupal.ajax() function must be called with one configuration object only",
       );
     }
 
@@ -9769,7 +9778,7 @@ function _arrayLikeToArray(arr, len) {
       beforeSubmit: function beforeSubmit(
         formValues,
         elementSettings,
-        options
+        options,
       ) {
         ajax.ajaxing = true;
         return ajax.beforeSubmit(formValues, elementSettings, options);
@@ -9786,7 +9795,7 @@ function _arrayLikeToArray(arr, len) {
         if (response !== null && !drupalSettings.ajaxTrustedUrl[ajax.url]) {
           if (xmlhttprequest.getResponseHeader("X-Drupal-Ajax-Token") !== "1") {
             var customMessage = Drupal.t(
-              "The response failed verification so will not be processed."
+              "The response failed verification so will not be processed.",
             );
             return ajax.error(xmlhttprequest, ajax.url, customMessage);
           }
@@ -9833,7 +9842,7 @@ function _arrayLikeToArray(arr, len) {
         throw new Error(
           Drupal.t("The callback URL is not local and not trusted: !url", {
             "!url": ajax.url,
-          })
+          }),
         );
       }
 
@@ -9867,7 +9876,7 @@ function _arrayLikeToArray(arr, len) {
       window.alert(
         "An error occurred while attempting to process "
           .concat(this.options.url, ": ")
-          .concat(e.message)
+          .concat(e.message),
       );
       return $.Deferred().reject();
     }
@@ -9915,7 +9924,7 @@ function _arrayLikeToArray(arr, len) {
       window.alert(
         "An error occurred while attempting to process "
           .concat(ajax.options.url, ": ")
-          .concat(e.message)
+          .concat(e.message),
       );
     }
   };
@@ -9936,7 +9945,7 @@ function _arrayLikeToArray(arr, len) {
   Drupal.Ajax.prototype.beforeSubmit = function (
     formValues,
     element,
-    options
+    options,
   ) {};
 
   Drupal.Ajax.prototype.beforeSend = function (xmlhttprequest, options) {
@@ -9989,7 +9998,7 @@ function _arrayLikeToArray(arr, len) {
 
   Drupal.theme.ajaxProgressBar = function ($element) {
     return $('<div class="ajax-progress ajax-progress-bar"></div>').append(
-      $element
+      $element,
     );
   };
 
@@ -9998,7 +10007,7 @@ function _arrayLikeToArray(arr, len) {
       "ajax-progress-".concat(this.element.id),
       $.noop,
       this.progress.method,
-      $.noop
+      $.noop,
     );
 
     if (this.progress.message) {
@@ -10008,12 +10017,12 @@ function _arrayLikeToArray(arr, len) {
     if (this.progress.url) {
       progressBar.startMonitoring(
         this.progress.url,
-        this.progress.interval || 1500
+        this.progress.interval || 1500,
       );
     }
 
     this.progress.element = $(
-      Drupal.theme("ajaxProgressBar", progressBar.element)
+      Drupal.theme("ajaxProgressBar", progressBar.element),
     );
     this.progress.object = progressBar;
     $(this.element).after(this.progress.element);
@@ -10021,7 +10030,7 @@ function _arrayLikeToArray(arr, len) {
 
   Drupal.Ajax.prototype.setProgressIndicatorThrobber = function () {
     this.progress.element = $(
-      Drupal.theme("ajaxProgressThrobber", this.progress.message)
+      Drupal.theme("ajaxProgressThrobber", this.progress.message),
     );
     $(this.element).after(this.progress.element);
   };
@@ -10073,8 +10082,8 @@ function _arrayLikeToArray(arr, len) {
         target = document.querySelector(
           '[data-drupal-selector="'.concat(
             elementParents[n].getAttribute("data-drupal-selector"),
-            '"]'
-          )
+            '"]',
+          ),
         );
       }
 
@@ -10163,7 +10172,7 @@ function _arrayLikeToArray(arr, len) {
         "ajaxWrapperNewContent",
         $newContent,
         ajax,
-        response
+        response,
       );
 
       switch (method) {
@@ -10223,8 +10232,8 @@ function _arrayLikeToArray(arr, len) {
             .append(
               ' <abbr class="ajax-changed" title="'.concat(
                 Drupal.t("Changed"),
-                '">*</abbr> '
-              )
+                '">*</abbr> ',
+              ),
             );
         }
       }
@@ -10293,7 +10302,7 @@ function _arrayLikeToArray(arr, len) {
       var $element = $(response.selector);
       $element[response.method].apply(
         $element,
-        _toConsumableArray(response.args)
+        _toConsumableArray(response.args),
       );
     },
     restripe: function restripe(ajax, response, status) {
@@ -10309,7 +10318,7 @@ function _arrayLikeToArray(arr, len) {
     update_build_id: function update_build_id(ajax, response, status) {
       document
         .querySelectorAll(
-          'input[name="form_build_id"][value="'.concat(response.old, '"]')
+          'input[name="form_build_id"][value="'.concat(response.old, '"]'),
         )
         .forEach(function (item) {
           item.value = response.new;
@@ -10320,7 +10329,7 @@ function _arrayLikeToArray(arr, len) {
     },
     message: function message(ajax, response) {
       var messages = new Drupal.Message(
-        document.querySelector(response.messageWrapperQuerySelector)
+        document.querySelector(response.messageWrapperQuerySelector),
       );
 
       if (response.clearPrevious) {
@@ -10400,7 +10409,7 @@ function _arrayLikeToArray(arr, len) {
       ) {
         $scrollTarget.animate(
           { scrollTop: offset.top - Drupal.webform.scrollTopOffset },
-          500
+          500,
         );
       }
     }
@@ -10416,7 +10425,7 @@ function _arrayLikeToArray(arr, len) {
     if (!Drupal.webformIsScrolledIntoView($element)) {
       $("html, body").animate(
         { scrollTop: $element.offset().top - Drupal.webform.scrollTopOffset },
-        500
+        500,
       );
     }
   };
@@ -10603,7 +10612,7 @@ function _arrayLikeToArray(arr, len) {
   Drupal.AjaxCommands.prototype.webformInsert = function (
     ajax,
     response,
-    status
+    status,
   ) {
     // Insert the HTML.
     this.insert(ajax, response, status);
@@ -10650,7 +10659,7 @@ function _arrayLikeToArray(arr, len) {
         var $floatingMessage = $("#webform-ajax-messages");
         if ($floatingMessage.length === 0) {
           $floatingMessage = $(
-            '<div id="webform-ajax-messages" class="webform-ajax-messages"></div>'
+            '<div id="webform-ajax-messages" class="webform-ajax-messages"></div>',
           );
           $("body").append($floatingMessage);
         }
@@ -10705,7 +10714,7 @@ function _arrayLikeToArray(arr, len) {
   Drupal.AjaxCommands.prototype.webformRefresh = function (
     ajax,
     response,
-    status
+    status,
   ) {
     // Get URL path name.
     // @see https://stackoverflow.com/questions/6944744/javascript-get-portion-of-url-path
@@ -10769,7 +10778,7 @@ function _arrayLikeToArray(arr, len) {
   Drupal.AjaxCommands.prototype.webformCloseDialog = function (
     ajax,
     response,
-    status
+    status,
   ) {
     if ($("#drupal-off-canvas").length) {
       // Close off-canvas system tray which is not triggered by close dialog
@@ -10806,7 +10815,7 @@ function _arrayLikeToArray(arr, len) {
    */
   Drupal.AjaxCommands.prototype.webformConfirmReload = function (
     ajax,
-    response
+    response,
   ) {
     if (window.confirm(response.message)) {
       window.location.reload(true);
@@ -11071,7 +11080,7 @@ function _arrayLikeToArray(arr, len) {
             type: O || q.ajaxSettings.type,
             iframeSrc: o,
           },
-          M
+          M,
         ));
       var i = {};
       if ((this.trigger("form-pre-serialize", [this, M, i]), i.veto))
@@ -11210,7 +11219,7 @@ function _arrayLikeToArray(arr, len) {
                                 (t = Math.ceil((r / a) * 100)),
                                 M.uploadProgress(e, r, a, t);
                             },
-                            !1
+                            !1,
                           ),
                         e
                       );
@@ -11264,7 +11273,7 @@ function _arrayLikeToArray(arr, len) {
               : d.attr2("name", o)
             : (d = q(
                 '<iframe name="' + o + '" src="' + l.iframeSrc + '" />',
-                s
+                s,
               )).css({ position: "absolute", top: "-1000px", left: "-1000px" }),
           (m = d[0]),
           (p = {
@@ -11354,15 +11363,15 @@ function _arrayLikeToArray(arr, len) {
                           '<input type="hidden" name="' +
                             l.extraData[n].name +
                             '">',
-                          s
+                          s,
                         )
                           .val(l.extraData[n].value)
-                          .appendTo(i)[0]
+                          .appendTo(i)[0],
                       )
                     : a.push(
                         q('<input type="hidden" name="' + n + '">', s)
                           .val(l.extraData[n])
-                          .appendTo(i)[0]
+                          .appendTo(i)[0],
                       ));
             l.iframeTarget || d.appendTo(u),
               m.attachEvent
@@ -11575,7 +11584,7 @@ function _arrayLikeToArray(arr, len) {
             }))
           : N(
               "terminating; zero elements found by selector" +
-                (q.isReady ? "" : " (DOM not ready)")
+                (q.isReady ? "" : " (DOM not ready)"),
             ),
         this
       );
@@ -11622,7 +11631,7 @@ function _arrayLikeToArray(arr, len) {
               (a.push({ name: m, value: q(u).val(), type: u.type }),
               a.push(
                 { name: m + ".x", value: p.clk_x },
-                { name: m + ".y", value: p.clk_y }
+                { name: m + ".y", value: p.clk_y },
               ));
           else if ((s = q.fieldValue(u, !0)) && s.constructor === Array)
             for (t && t.push(u), i = 0, l = s.length; i < l; i++)
@@ -11652,7 +11661,7 @@ function _arrayLikeToArray(arr, len) {
             (a.push({ name: m, value: f.val() }),
             a.push(
               { name: m + ".x", value: p.clk_x },
-              { name: m + ".y", value: p.clk_y }
+              { name: m + ".y", value: p.clk_y },
             ))),
         a
       );
@@ -11849,7 +11858,7 @@ function _arrayLikeToArray(arr, len) {
       // Place <input> inside of <label> before the label.
       $(context)
         .find(
-          'label.webform-options-display-buttons-label > input[type="checkbox"], label.webform-options-display-buttons-label > input[type="radio"]'
+          'label.webform-options-display-buttons-label > input[type="checkbox"], label.webform-options-display-buttons-label > input[type="radio"]',
         )
         .each(function () {
           var $input = $(this);
@@ -11894,10 +11903,10 @@ function _arrayLikeToArray(arr, len) {
 
           // Get options all and none checkboxes.
           var $options_all = $element.find(
-            ':checkbox[value="' + options_all_value + '"]'
+            ':checkbox[value="' + options_all_value + '"]',
           );
           var $options_none = $element.find(
-            ':checkbox[value="' + options_none_value + '"]'
+            ':checkbox[value="' + options_none_value + '"]',
           );
 
           // All of the above.
@@ -11992,7 +12001,7 @@ function _arrayLikeToArray(arr, len) {
     : t(
         ((e =
           "undefined" != typeof globalThis ? globalThis : e || self).Popper =
-          {})
+          {}),
       );
 })(this, function (e) {
   "use strict";
@@ -12048,9 +12057,8 @@ function _arrayLikeToArray(arr, len) {
     return e ? (e.nodeName || "").toLowerCase() : null;
   }
   function u(e) {
-    return (
-      (n(e) ? e.ownerDocument : e.document) || window.document
-    ).documentElement;
+    return ((n(e) ? e.ownerDocument : e.document) || window.document)
+      .documentElement;
   }
   function l(e) {
     return f(u(e)).left + c(e).scrollLeft;
@@ -12270,7 +12278,7 @@ function _arrayLikeToArray(arr, len) {
                   ((s = o.offsetLeft), (f = o.offsetTop))),
               { width: i, height: a, x: s + l(e), y: f }
             );
-          })(e)
+          })(e),
         )
       : n(r)
       ? (function (e) {
@@ -12297,13 +12305,13 @@ function _arrayLikeToArray(arr, len) {
                 n.scrollWidth,
                 n.clientWidth,
                 o ? o.scrollWidth : 0,
-                o ? o.clientWidth : 0
+                o ? o.clientWidth : 0,
               ),
               s = i(
                 n.scrollHeight,
                 n.clientHeight,
                 o ? o.scrollHeight : 0,
-                o ? o.clientHeight : 0
+                o ? o.clientHeight : 0,
               ),
               f = -r.scrollLeft + l(e),
               p = -r.scrollTop;
@@ -12312,7 +12320,7 @@ function _arrayLikeToArray(arr, len) {
                 (f += i(n.clientWidth, o ? o.clientWidth : 0) - a),
               { width: a, height: s, x: f, y: p }
             );
-          })(u(e))
+          })(u(e)),
         );
   }
   function I(e, t, o) {
@@ -12333,16 +12341,19 @@ function _arrayLikeToArray(arr, len) {
           : [].concat(t),
       f = [].concat(s, [o]),
       c = f[0],
-      u = f.reduce(function (t, n) {
-        var r = N(e, n);
-        return (
-          (t.top = i(r.top, t.top)),
-          (t.right = a(r.right, t.right)),
-          (t.bottom = a(r.bottom, t.bottom)),
-          (t.left = i(r.left, t.left)),
-          t
-        );
-      }, N(e, c));
+      u = f.reduce(
+        function (t, n) {
+          var r = N(e, n);
+          return (
+            (t.top = i(r.top, t.top)),
+            (t.right = a(r.right, t.right)),
+            (t.bottom = a(r.bottom, t.bottom)),
+            (t.left = i(r.left, t.left)),
+            t
+          );
+        },
+        N(e, c),
+      );
     return (
       (u.width = u.right - u.left),
       (u.height = u.bottom - u.top),
@@ -12496,7 +12507,7 @@ function _arrayLikeToArray(arr, len) {
                   return e.concat(
                     t.filter(function (e) {
                       return e.phase === n;
-                    })
+                    }),
                   );
                 }, []);
               })(
@@ -12515,7 +12526,7 @@ function _arrayLikeToArray(arr, len) {
                 }, {})),
                 Object.keys(p).map(function (e) {
                   return p[e];
-                }))
+                })),
               );
             return (
               (f.orderedModifiers = d.filter(function (e) {
@@ -12550,7 +12561,7 @@ function _arrayLikeToArray(arr, len) {
                   f.orderedModifiers.forEach(function (e) {
                     return (f.modifiersData[e.name] = Object.assign(
                       {},
-                      e.data
+                      e.data,
                     ));
                   });
                 for (var r = 0; r < f.orderedModifiers.length; r++)
@@ -12725,7 +12736,7 @@ function _arrayLikeToArray(arr, len) {
               (W.devicePixelRatio || 1) <= 1
                 ? "translate(" + g + "px, " + b + "px)"
                 : "translate3d(" + g + "px, " + b + "px, 0)"),
-            R)
+            R),
           )
         : Object.assign(
             {},
@@ -12733,7 +12744,7 @@ function _arrayLikeToArray(arr, len) {
             (((n = {})[M] = L ? b + "px" : ""),
             (n[P] = w ? g + "px" : ""),
             (n.transform = ""),
-            n)
+            n),
           )
     );
   }
@@ -12768,8 +12779,8 @@ function _arrayLikeToArray(arr, len) {
               position: t.options.strategy,
               adaptive: a,
               roundOffsets: f,
-            })
-          )
+            }),
+          ),
         )),
         null != t.modifiersData.arrow &&
           (t.styles.arrow = Object.assign(
@@ -12781,8 +12792,8 @@ function _arrayLikeToArray(arr, len) {
                 position: "absolute",
                 adaptive: !1,
                 roundOffsets: f,
-              })
-            )
+              }),
+            ),
           )),
         (t.attributes.popper = Object.assign({}, t.attributes.popper, {
           "data-popper-placement": t.placement,
@@ -12832,7 +12843,7 @@ function _arrayLikeToArray(arr, len) {
             var o = t.elements[e],
               i = t.attributes[e] || {},
               a = Object.keys(
-                t.styles.hasOwnProperty(e) ? t.styles[e] : n[e]
+                t.styles.hasOwnProperty(e) ? t.styles[e] : n[e],
               ).reduce(function (e, t) {
                 return (e[t] = ""), e;
               }, {});
@@ -12981,7 +12992,7 @@ function _arrayLikeToArray(arr, len) {
                       flipVariations: h,
                       allowedAutoPlacements: m,
                     })
-                  : n
+                  : n,
               );
             }, []),
             x = t.rects.reference,
@@ -13170,7 +13181,7 @@ function _arrayLikeToArray(arr, len) {
                     ? e(Object.assign({}, t.rects, { placement: t.placement }))
                     : e)
                 ? e
-                : X(e, P)
+                : X(e, P),
             );
           })(o.padding, n),
           u = v(i),
